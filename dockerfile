@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-RUN pip install flask
+EXPOSE 8080
 WORKDIR /app
 COPY . /app
 ENTRYPOINT [ "python" ]

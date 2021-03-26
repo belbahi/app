@@ -1,6 +1,6 @@
-FROM python:3.7-alpine
+FROM ubuntu:latest
 RUN pip install flask
 WORKDIR /app
 COPY . /app
 ENTRYPOINT [ "python" ]
-CMD [ "code.py" ]
+CMD [ "app.py" ]
